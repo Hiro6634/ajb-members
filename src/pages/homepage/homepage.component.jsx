@@ -1,17 +1,11 @@
 import React from 'react';
 
+import Credential from '../../components/credential/credential.component';
 import { HomePageContainer } from './homepage.styles'; 
 
 const HomePage = () => (
     <HomePageContainer>
-        <div className='directory-menu'>
-            <div className='menu-item'>
-                <div className='content'>
-                    <h1 className='title'>HATS</h1>
-                    <span className='subtitle'>SHOP NOW</span>
-                </div>
-            </div> 
-        </div>
+        <Credential estado='ACTIVO'/>
     </HomePageContainer>
 );
 

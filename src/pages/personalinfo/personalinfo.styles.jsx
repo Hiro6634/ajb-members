@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const HomePageContainer = styled.div`
+export const PersonalInfoPageContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 `;
 
 export const Status = styled.div`
-    background-color: green;
-    color: black;
+    background-color: red;
+    color: yellow;
 `;

@@ -7,7 +7,7 @@ import { HeaderContainer, LogoContainer, OptionLink, OptionsContainer } from "./
 const Header = () => (
     <HeaderContainer>
         <LogoContainer to='/'>
-            <Logo/>
+            <Logo viewBox='0 0 200 200'/>
         </LogoContainer>
         <OptionsContainer>
             <OptionLink to='/personal-info'>INFO</OptionLink>

@@ -11,11 +11,8 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
     height: 100%;
-    width: 70px;
+    width: 50px;
     padding: 25px;
-`;
-export const Logo = styled.img`
-    width:30px;
 `;
 
 export const OptionsContainer = styled.div`

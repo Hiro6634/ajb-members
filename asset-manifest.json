@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ajb-members/static/css/main.fae79ed6.chunk.css",
+    "main.js": "/ajb-members/static/js/main.0d0b4b5d.chunk.js",
+    "main.js.map": "/ajb-members/static/js/main.0d0b4b5d.chunk.js.map",
+    "runtime-main.js": "/ajb-members/static/js/runtime-main.78c176e4.js",
+    "runtime-main.js.map": "/ajb-members/static/js/runtime-main.78c176e4.js.map",
+    "static/js/2.a1daa863.chunk.js": "/ajb-members/static/js/2.a1daa863.chunk.js",
+    "static/js/2.a1daa863.chunk.js.map": "/ajb-members/static/js/2.a1daa863.chunk.js.map",
+    "index.html": "/ajb-members/index.html",
+    "static/css/main.fae79ed6.chunk.css.map": "/ajb-members/static/css/main.fae79ed6.chunk.css.map",
+    "static/js/2.a1daa863.chunk.js.LICENSE.txt": "/ajb-members/static/js/2.a1daa863.chunk.js.LICENSE.txt",
+    "static/media/link.1e60d3c4.svg": "/ajb-members/static/media/link.1e60d3c4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78c176e4.js",
+    "static/js/2.a1daa863.chunk.js",
+    "static/css/main.fae79ed6.chunk.css",
+    "static/js/main.0d0b4b5d.chunk.js"
+  ]
+}

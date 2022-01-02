@@ -1,22 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-//import { ReactComponent as Logo } from '../../assets/link.svg';
+//import { ReactComponent as Logo } from '../../assets/ajb.svg';
+//import logo from '../../assets/ajb.svg';
 import logo from '../../assets/ajb.png';
 
-import './header.styles.scss';
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 import { auth } from "../../firebase/firebase.utils";
 
+//import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './header.styles';
+import './header.styles.scss';
+import { Link } from 'react-router-dom';
+
 const Header = ({currentUser}) => (
     <div className='header'>
-        <Link to='/'>
-        <img src={logo} alt="logo" className='logo-container'/>
+        <Link className='logo-container' to='/'>
+            <img src={logo} alt={"logo"} className='mlogo'/>
         </Link>
         <div className='options'>
-            <Link className='option' to='/info'>Info</Link>
+            <div className='option' to='/info'>Info</div>
             {
                 currentUser ? 
                     <div className='option' onClick={() => auth.signOut()}>Salir</div>

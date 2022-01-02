@@ -3,17 +3,19 @@ import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 
 import './credential.styles.scss';
+import { CredentialContainer, CredentialDisplayName, CredentialState } from './credential.styles';
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 
 const Credential = ({currentUser}) => {
 
     return(
-        <div className='credential-container'>
-            <h1 className='display-name'>{currentUser.displayName}</h1>
+        <CredentialContainer>
+            <CredentialDisplayName>{currentUser.displayName}</CredentialDisplayName>
             <p>Socio: {currentUser.idNumber}</p>
             <p>Categoria: {currentUser.category}</p>
-            <p>Estado: {currentUser.state}</p>
-        </div>
+            <CredentialState isDebtor={currentUser.state==='Moroso'}>Estado: {currentUser.state}</CredentialState>
+            <p>Pase Sanitario: {currentUser.paseSanitario?currentUser.paseSanitario:"NO PRESENTADO"}</p>
+        </CredentialContainer>
     )
 };
 

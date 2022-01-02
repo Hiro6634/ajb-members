@@ -15,6 +15,11 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { setCurrentUser } from './redux/user/user.actions';
 
+const DummyPage = () => (
+  <div>
+    <h2>Dummy Page</h2>
+  </div>
+);
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -50,6 +55,7 @@ class App extends React.Component {
         <Switch>
           <Route  exact path='/' component={ HomePage  } />        
           <Route  path='/info' component={PersonalInfoPage}/>
+          <Route  path='/dummy' component={DummyPage}/>
           <Route 
             exact 
             path='/signin'  
@@ -61,7 +67,8 @@ class App extends React.Component {
                 )
             }
           />
-          <Redirect to ="/"/>
+          <Redirect to = {
+            currentUser ? (`/info`):(`/signin`)}/>
         </Switch>
       </div>
     );
